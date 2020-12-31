@@ -1,0 +1,11 @@
+rootProject.name = 'gs-notification-service'
+include 'notification-persist-service'
+include 'notification-docker-service'
+include 'notification-config-service'
+include 'notification-discover-service'
+include 'notification-gateway-service.properties'
+include 'notification-gateway-service'
+include 'notification-data-model'
+include 'tracker-persist-service'
+include 'notification-process-service'
+

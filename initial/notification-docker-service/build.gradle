@@ -1,0 +1,54 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'com.techbow.notification'
+version = '0.0.1-SNAPSHOT'
+
+task restartDockeredServices {
+    doLast {
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/mongodb-service.sh', 'restart'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/redis-service.sh', 'restart'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/zipkin-service.sh', 'restart'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/rabbitmq-service.sh', 'restart'
+        }
+    }
+}
+
+task stopDockeredServices {
+    doLast {
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/mongodb-service.sh', 'stop'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/redis-service.sh', 'stop'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/zipkin-service.sh', 'stop'
+        }
+
+        exec {
+            workingDir '.'
+            commandLine '/bin/bash', 'src/rabbitmq-service.sh', 'stop'
+        }
+    }
+}

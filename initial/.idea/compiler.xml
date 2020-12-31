@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.8/448003bc1b234aac04b58e27d7755c12c3ec4236/lombok-1.18.8.jar" />
+        </processorPath>
+        <module name="gs-notification-service.notification-persist-service.test" />
+        <module name="gs-notification-service.notification-gateway-service.main" />
+        <module name="gs-notification-service.notification-data-model.test" />
+        <module name="gs-notification-service.notification-process-service.test" />
+        <module name="gs-notification-service.notification-process-service.main" />
+        <module name="gs-notification-service.notification-data-model.main" />
+        <module name="gs-notification-service.tracker-persist-service.main" />
+        <module name="gs-notification-service.notification-gateway-service.test" />
+        <module name="gs-notification-service.notification-persist-service.main" />
+        <module name="gs-notification-service.notification-config-service.main" />
+        <module name="gs-notification-service.notification-discover-service.main" />
+        <module name="gs-notification-service.notification-config-service.test" />
+        <module name="gs-notification-service.notification-discover-service.test" />
+        <module name="gs-notification-service.tracker-persist-service.test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.10" />
+  </component>
+</project>
