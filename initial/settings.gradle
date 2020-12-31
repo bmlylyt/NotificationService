@@ -10,4 +10,5 @@ include 'tracker-persist-service'
 include 'notification-process-service'
 include 'notification-render-service'
 include 'notification-deliver-service'
+include 'notification-schedule-service'
 

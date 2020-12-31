@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
+import org.springframework.messaging.support.MessageBuilder;
 
 import java.util.logging.Logger;
 
@@ -26,12 +27,15 @@ public class NotificationProcessEventController {
     public void processNotification(ProcessContext processContext) {
         LOG.info("Received ProcessContext: " + processContext);
         Tracker tracker = processContext.getTracker();
-        if (tracker.getState() == Tracker.State.Persisted) {
+        if (tracker.getState() == Tracker.State.Persisted ||
+                tracker.getState() == Tracker.State.SendPromised) {
             LOG.info("About to process tracker: " + tracker);
             trackerServiceClient.updateTracker(tracker);
             LOG.info("Updated tracker: " + tracker);
-            // Send notification for rendering
 
+            // Send notification for rendering
+            notificationProcessEventProcessor.renderChannel().send(
+                    MessageBuilder.withPayload(processContext).build());
         } else {
             LOG.info("Unexpected track state for tracker: " + tracker.toString());
             tracker.setState(Tracker.State.Error);

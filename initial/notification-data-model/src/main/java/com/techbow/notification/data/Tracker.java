@@ -15,7 +15,9 @@ public class Tracker implements Serializable {
         Persisted,
         Rendered,
         Delivered,
-        Error
+        Error,
+        SendPromised,
+        Scheduled
     }
 
     @Id

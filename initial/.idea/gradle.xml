@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/notification-persist-service" />
             <option value="$PROJECT_DIR$/notification-process-service" />
             <option value="$PROJECT_DIR$/notification-render-service" />
+            <option value="$PROJECT_DIR$/notification-schedule-service" />
             <option value="$PROJECT_DIR$/tracker-persist-service" />
           </set>
         </option>
