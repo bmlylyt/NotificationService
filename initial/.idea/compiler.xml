@@ -14,7 +14,9 @@
         <module name="gs-notification-service.notification-process-service.test" />
         <module name="gs-notification-service.notification-process-service.main" />
         <module name="gs-notification-service.notification-data-model.main" />
+        <module name="gs-notification-service.notification-deliver-service.test" />
         <module name="gs-notification-service.notification-render-service.main" />
+        <module name="gs-notification-service.notification-deliver-service.main" />
         <module name="gs-notification-service.tracker-persist-service.main" />
         <module name="gs-notification-service.notification-gateway-service.test" />
         <module name="gs-notification-service.notification-render-service.test" />

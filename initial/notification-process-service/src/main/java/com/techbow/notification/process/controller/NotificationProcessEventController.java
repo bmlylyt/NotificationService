@@ -31,6 +31,7 @@ public class NotificationProcessEventController {
             trackerServiceClient.updateTracker(tracker);
             LOG.info("Updated tracker: " + tracker);
             // Send notification for rendering
+
         } else {
             LOG.info("Unexpected track state for tracker: " + tracker.toString());
             tracker.setState(Tracker.State.Error);

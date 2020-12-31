@@ -50,7 +50,5 @@ public class NotificationRenderEventController {
         notificationRenderEventProcessor.deliverChannel().send(
                 MessageBuilder.withPayload(processContext).build()
         );
-
-
     }
 }
