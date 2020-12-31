@@ -1,6 +1,5 @@
 package com.techbow.notification.process.controller;
 
-import com.techbow.notification.data.Notification;
 import com.techbow.notification.data.ProcessContext;
 import com.techbow.notification.data.Tracker;
 import com.techbow.notification.process.service.NotificationProcessEventProcessor;
@@ -9,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
-import org.springframework.messaging.support.MessageBuilder;
 
 import java.util.logging.Logger;
 

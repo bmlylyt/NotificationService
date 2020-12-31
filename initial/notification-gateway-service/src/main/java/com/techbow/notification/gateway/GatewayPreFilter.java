@@ -5,7 +5,6 @@ import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.logging.Logger;
 
 public class GatewayPreFilter extends ZuulFilter {

@@ -8,4 +8,5 @@ import java.io.Serializable;
 public class ProcessContext implements Serializable {
     private Tracker tracker;
     private Notification notification;
+    private RenderedContent renderedContent;
 }

@@ -1,15 +1,14 @@
 package com.techbow.notification.persist.controller;
 
+import com.techbow.notification.persist.service.NotificationPersistCRUDService;
 import com.techbow.notification.data.Notification;
 import com.techbow.notification.data.ProcessContext;
 import com.techbow.notification.data.Tracker;
 import com.techbow.notification.persist.dao.NotificationPersistEventProcessor;
-import com.techbow.notification.persist.service.NotificationPersistCRUDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.support.MessageBuilder;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.logging.Logger;
 

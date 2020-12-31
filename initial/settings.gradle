@@ -8,4 +8,5 @@ include 'notification-gateway-service'
 include 'notification-data-model'
 include 'tracker-persist-service'
 include 'notification-process-service'
+include 'notification-render-service'
 

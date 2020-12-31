@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/notification-gateway-service.properties" />
             <option value="$PROJECT_DIR$/notification-persist-service" />
             <option value="$PROJECT_DIR$/notification-process-service" />
+            <option value="$PROJECT_DIR$/notification-render-service" />
             <option value="$PROJECT_DIR$/tracker-persist-service" />
           </set>
         </option>

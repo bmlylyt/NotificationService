@@ -1,7 +1,7 @@
 package com.techbow.notification.persist.controller;
 
-import com.techbow.notification.data.Notification;
 import com.techbow.notification.persist.service.NotificationPersistCRUDService;
+import com.techbow.notification.data.Notification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
